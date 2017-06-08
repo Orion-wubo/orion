@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所属单位：广东省"/>
+
+        <!--<Spinner-->
+        <!--android:id="@+id/sheng"-->
+
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--</Spinner>-->
+
+        <!--<Spinner-->
+        <!--android:id="@+id/shi"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--</Spinner>-->
+
+        <!--<Spinner-->
+        <!--android:id="@+id/xian"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--</Spinner>-->
+
+        <!--<CheckBox-->
+        <!--android:id="@+id/checkbox"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="只显示统计图"/>-->
+
+        <!--<Button-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="查询"/>-->
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:text="广东省报警信息统计图"/>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/seekBar1"
+        android:layout_weight="1"/>
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"
+        android:background="@color/black"
+        android:showDividers="beginning">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/black">
+
+            <TextView
+                android:layout_width="@dimen/table_item1_width"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="报警类目"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="@dimen/table_item1_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="起数"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/black">
+
+            <TextView
+                android:layout_width="@dimen/table_item1_width"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="合计"/>
+
+            <TextView
+                android:layout_width="@dimen/table_item1_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:background="@color/white"
+                android:text="62"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/black">
+
+            <TextView
+                android:layout_width="@dimen/table_item1_width"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="一键报警"/>
+
+            <TextView
+                android:layout_width="@dimen/table_item1_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:background="@color/white"
+                android:text="46"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/black">
+
+            <TextView
+                android:layout_width="@dimen/table_item1_width"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="火情火灾"/>
+
+            <TextView
+                android:layout_width="@dimen/table_item1_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:background="@color/white"
+                android:text="12"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/black">
+
+            <TextView
+                android:layout_width="@dimen/table_item1_width"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="其他"/>
+
+            <TextView
+                android:layout_width="@dimen/table_item1_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:background="@color/white"
+                android:text="3"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/black">
+
+            <TextView
+                android:layout_width="@dimen/table_item1_width"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="毁林案件"/>
+
+            <TextView
+                android:layout_width="@dimen/table_item1_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:background="@color/white"
+                android:text="1"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
