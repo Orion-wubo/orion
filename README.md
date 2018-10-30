@@ -1,6 +1,9 @@
 详见：https://blog.csdn.net/androidwubo/article/details/72918612
+
 饼状图可以详见：http://blog.csdn.net/androidwubo/article/details/72922158
+
 组合图可以详见：http://blog.csdn.net/androidwubo/article/details/72922171
+
 该项目的源码：https://github.com/Orion-wubo/orion
 
 步骤：（以柱状图为例）
