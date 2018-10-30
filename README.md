@@ -7,8 +7,11 @@
 该项目的源码：https://github.com/Orion-wubo/orion
 
 步骤：（以柱状图为例）
+
 1、引用（三种方式，不一一介绍了，看github）
+
 2、根据需求选择相应的表
+
 折线图 LineChart
 条形图 BarChart
 条形折线图 Combined-Chart
@@ -157,3 +160,4 @@ ArrayList<BarEntry> yVals1 = new ArrayList<BarEntry>();
 
 
             mChart.setData(data);
+
